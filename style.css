@@ -9,15 +9,17 @@
 
 body {
 	font-size: 100%;
-	background: linear-gradient(68.15deg, #968700 16.62%, #ffee00 85.61%);
 }
 
 #cabecalho {
+	position: fixed;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	padding: 24px;
+	width: 100%;
+
 }
 
 #cabecalho-imagem {
@@ -34,11 +36,15 @@ body {
 	color: #fff2e7;
 	font-weight: 400;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 #conteudo {
-	border-top: 0.4px solid #fff2e7;
 	margin-bottom: 48px;
+	padding-top: 70px;
+	background-image: url("imagens/fundo.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #conteudo-principal {
@@ -46,6 +52,7 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	height: 100vh;
 }
 
 #conteudo-principal-escrito {
@@ -56,7 +63,7 @@ body {
 
 #conteudo-principal-escrito-titulo {
 	font-family: 'Righteous', cursive;
-	color: #ecd6c4;
+	color: #02d9ff;
 	font-weight: 400;
 	font-size: 50px;
 
@@ -64,22 +71,23 @@ body {
 
 #conteudo-principal-escito-subtitulo {
 	font-family: 'Sarala', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 24px;
 	color: #ecd6c4;
 }
 
 .conteudo-principal-escito-botao {
-	background-color: yellow;
+	background-color: rgb(25, 211, 0);
 	height: 60px;
 	width: 180px;
 	border: none;
 	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	font-family: 'Sarala', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 24px;
 	color: #2f2325;
+	cursor: pointer;
 }
 
 .conteudo-principal-escito-botao:hover {
@@ -88,33 +96,27 @@ body {
 }
 
 #conteudo-principal-imagem {
-	height: 430px;
+	height: 23rem;
 	margin-top: 40px;
+	padding: 20px;
+	animation-name: goback;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
-#conteudo-secundario {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	grid-gap: 24px;
-	margin-top: 48px;
+@keyframes goback{
+	0%{
+		transform: translateY(20px);
+	}
+	100%{
+		transform: translateY(0);
+	}
 }
 
-#conteudo-secundario-titulo {
-	border-top: 0.4px solid #fff2e7;
-	padding-top: 48px;
-	font-family: 'Righteous', cursive;
-	font-weight: 400;
-	font-size: 24px;
-	color: #fff2e7;
-	margin-bottom: 16px;
-}
-
-#conteudo-secundario-paragrafo {
-	font-family: 'Sarala', sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	color: #ecd6c4;
+.sobre-nos{
+	height: 100vh;
+	padding-top: 70px;
 }
 
 #rodape {
