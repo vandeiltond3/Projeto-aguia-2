@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 
 * {
 	margin: 0;
@@ -8,43 +9,62 @@
 }
 
 body {
+	font-family: 'Arial', sans-serif;
 	font-size: 100%;
 }
 
 #cabecalho {
-	position: fixed;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
-	padding: 24px;
+	justify-content: space-between;
 	width: 100%;
-
+	background-color: #1d010d;
 }
 
 #cabecalho-imagem {
-	height: 72px;
+	height: 82px;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	font-family: 'Comforter Brush', cursive;
+	font-size: 2.5em;
+}
+
+.aguia{
+	color: #f7f4f2;
+}
+
+.real{
+	color: aqua;
 }
 
 #cabecalho-menu {
-	display: flex;
-	grid-gap: 32px;
+	display: inline;
+	margin-right: 30px;
 }
 
 #cabecalho-menu-item {
 	font-family: 'Sarala', sans-serif;
-	color: #fff2e7;
+	color: #dcdcee;
 	font-weight: 400;
 	font-size: 18px;
 	cursor: pointer;
+	display: inline-block;
+	padding: 31px 20px;
+	transition: .6s;
+}
+
+#cabecalho-menu-item:hover{
+	background-color: #07cef1;
 }
 
 #conteudo {
 	margin-bottom: 48px;
-	padding-top: 70px;
-	background-image: url("imagens/fundo.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 #conteudo-principal {
@@ -53,19 +73,23 @@ body {
 	align-items: center;
 	justify-content: space-around;
 	height: 100vh;
+	background-image: url("imagens/fundo.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #conteudo-principal-escrito {
 	display: flex;
 	flex-direction: column;
 	grid-gap: 32px;
+	margin-left: 20px;
 }
 
 #conteudo-principal-escrito-titulo {
 	font-family: 'Righteous', cursive;
 	color: #02d9ff;
 	font-weight: 400;
-	font-size: 50px;
+	font-size: 4em;
 
 }
 
@@ -116,7 +140,18 @@ body {
 
 .sobre-nos{
 	height: 100vh;
-	padding-top: 70px;
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulo-sobre-nos{
+	font-size: 4em;
+	font-weight: 400;
+	color: #141313;
+	padding-top: 40px;
+	text-align: center;
 }
 
 #rodape {
