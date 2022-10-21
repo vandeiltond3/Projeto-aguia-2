@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="description" content="Aqui a zueira nunca acaba e os acampantes se divertem!">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>Águia Real</title>
 </head>
 <body>
@@ -15,14 +16,17 @@
 				<a class="aguia" href="#">Águia</a>
 				<a class="real" href="#">Real</a>
 			</div>
-			<nav id="cabecalho-menu">
-				<ul>
-					<a id="cabecalho-menu-item" href="#conteudo-principal">Home</a>
-					<a id="cabecalho-menu-item" href="#sobre-nos">Sobre Nós</a>
-					<a id="cabecalho-menu-item">Doar</a>
-					<a id="cabecalho-menu-item">Fotos</a>
-				</ul>
-			</nav>
+			<div class="menu-section">
+				<span class="material-icons" style="color: white; font-size: 36px;">menu</span>
+				<nav id="cabecalho-menu">
+					<ul>
+						<a id="cabecalho-menu-item" href="#conteudo-principal">Home</a>
+						<a id="cabecalho-menu-item" href="#sobre-nos">Sobre Nós</a>
+						<a id="cabecalho-menu-item">Doar</a>
+						<a id="cabecalho-menu-item">Fotos</a>
+					</ul>
+				</nav>
+			</div>
 		</div>
 		
 	</header>
@@ -35,7 +39,9 @@
 					<h2 id="conteudo-principal-escito-subtitulo">Participe de um clube 5 estrelas</h2>
 					<button class="conteudo-principal-escito-botao">Participar</button>
 				</div>
-				<img id="conteudo-principal-imagem" src="imagens/gramado3.png" alt="Imagem da águia">
+				<div id="imagem">
+					<img id="conteudo-principal-imagem" src="imagens/gramado3.png" alt="Imagem da águia">
+				</div>
 			</section>
 		</div>
 
@@ -48,7 +54,19 @@
 	
 
 	<footer id="rodape">
-		<img id="rodape-imagem" src="aguiabranca.png">
+		instagaram
 	</footer>
+
+	<script>
+		let show = true;
+
+		const menuSection = document.querySelector(".menu-section")
+		const hamburguer = document.querySelector(".material-icons")
+
+		hamburguer.addEventListener("click", () => {
+			menuSection.classList.toggle("on", show)
+			show = !show;
+		})
+	</script>
 </body>
 </html>
