@@ -14,17 +14,23 @@ body {
 }
 
 #cabecalho {
+	background-color: #1d010d;
+}
+
+#container-header{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+	width: 90%;
+	max-width: 1210px;
 	background-color: #1d010d;
+	margin: auto;
 }
 
 #cabecalho-imagem {
-	height: 82px;
-	margin-left: 30px;
+	width: 22%;
+	min-width: 60px;
 	padding: 10px;
 }
 
@@ -32,7 +38,7 @@ body {
 	display: flex;
 	align-items: center;
 	font-family: 'Comforter Brush', cursive;
-	font-size: 2.5em;
+	font-size: max(25px, 3vw);
 }
 
 .aguia{
@@ -45,14 +51,13 @@ body {
 
 #cabecalho-menu {
 	display: inline;
-	margin-right: 30px;
 }
 
 #cabecalho-menu-item {
 	font-family: 'Sarala', sans-serif;
 	color: #dcdcee;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: max(12px, 1.5vw);
 	cursor: pointer;
 	display: inline-block;
 	padding: 31px 20px;
@@ -67,49 +72,54 @@ body {
 	margin-bottom: 48px;
 }
 
+#conteiner-1{
+	background-image: url("imagens/fundo.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
 #conteudo-principal {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	height: 100vh;
-	background-image: url("imagens/fundo.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	width: 90%;
+	max-width: 1210px;
+	margin: auto;
 }
 
 #conteudo-principal-escrito {
 	display: flex;
 	flex-direction: column;
 	grid-gap: 32px;
-	margin-left: 20px;
 }
 
 #conteudo-principal-escrito-titulo {
 	font-family: 'Righteous', cursive;
 	color: #02d9ff;
 	font-weight: 400;
-	font-size: 4em;
-
+	font-size: max(40px, 4.5vw);
 }
 
 #conteudo-principal-escito-subtitulo {
 	font-family: 'Sarala', sans-serif;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: max(20px, 2vw);
 	color: #ecd6c4;
 }
 
 .conteudo-principal-escito-botao {
 	background-color: rgb(25, 211, 0);
-	height: 60px;
-	width: 180px;
+	height: 7vh;
+	width: 15vw;
 	border: none;
 	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	font-family: 'Sarala', sans-serif;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: max(12px, 1.7vw);
 	color: #2f2325;
 	cursor: pointer;
 }
@@ -120,13 +130,13 @@ body {
 }
 
 #conteudo-principal-imagem {
-	height: 23rem;
+	width: 49%;
 	margin-top: 40px;
-	padding: 20px;
 	animation-name: goback;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+
 }
 
 @keyframes goback{
@@ -144,10 +154,11 @@ body {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #dcdcee;
 }
 
 .titulo-sobre-nos{
-	font-size: 4em;
+	font-size: max(30px, 5vw);
 	font-weight: 400;
 	color: #141313;
 	padding-top: 40px;
