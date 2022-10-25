@@ -1,0 +1,18 @@
+#conteudo-principal-escrito{
+    animation-name: entrando;
+    animation-duration: 2s;
+}
+
+@keyframes entrando {
+    from { margin-top: 10%; opacity: 0%;}
+    to { margin-top: 0%; opacity: 100%;}
+}
+
+@keyframes goback{
+	0%{
+		transform: translateY(20px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}

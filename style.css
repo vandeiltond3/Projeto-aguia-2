@@ -11,6 +11,7 @@
 body {
 	font-family: 'Arial', sans-serif;
 	font-size: 100%;
+	background-color: rgb(22, 95, 163);
 }
 
 #cabecalho {
@@ -101,20 +102,7 @@ nav {
 
 .menu-section.on nav{
 	display: block;
-	animation-name: ladinho;
-	transition: 1s;
 }
-
-@keyframes ladinho {
-	0%{
-		transform: translateY(-100px);
-	}
-
-	100%{
-		transform: translateY(0px);
-	}
-}
-
 
 .menu-section.on .material-icons{
 	right: 0;
@@ -223,35 +211,41 @@ nav {
 	}
 	}
 
-@keyframes goback{
-	0%{
-		transform: translateY(20px);
-	}
-	100%{
-		transform: translateY(0);
-	}
-}
-
 .sobre-nos{
-	height: 100vh;
 	width: 90%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #dcdcee;
+	background-color: rgb(255, 255, 255);
 }
 
 .titulo-sobre-nos{
 	font-size: max(30px, 5vw);
 	font-weight: 400;
-	color: #141313;
+	color: #1d1e22;
 	padding-top: 40px;
 	text-align: center;
 }
 
+.sobre-nos h2, p, h3 {
+	padding: 40px;
+	text-align: center;
+	color: #1d1e22;
+}
+
+.sobre-nos p {
+	font-size: 20px;
+}
+
+.fotos {
+	display: flex;
+	justify-content: center;
+}
+
 #rodape {
 	padding: 32px;
-	border-top: 0.4px solid #fff2e7;
+	background-color: #131416;
+	color: white;
 }
 
 #rodape-imagem {
