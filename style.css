@@ -90,21 +90,35 @@ nav {
 /* menu hamburguer */
 
 .menu-section.on{
+	width: 130px;
 	position: absolute;
 	background-color: #1d010d;
-	width: 90vw;
 	top: 0;
+	right: 0;
+	margin-right: 5%;
 	z-index: 10;
-	max-width: 1210px;
 }
 
 .menu-section.on nav{
 	display: block;
+	animation-name: ladinho;
+	transition: 1s;
 }
 
+@keyframes ladinho {
+	0%{
+		transform: translateY(-100px);
+	}
+
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+
 .menu-section.on .material-icons{
-	position: absolute;
 	right: 0;
+	position: absolute;
 	top: 17px;
 }
 
