@@ -11,7 +11,7 @@
 body {
 	font-family: 'Arial', sans-serif;
 	font-size: 100%;
-	background-color: rgb(22, 95, 163);
+	background-color: rgb(5, 15, 29);
 }
 
 #cabecalho {
@@ -85,6 +85,22 @@ nav {
 	.material-icons{
 		visibility: visible;
 		cursor: pointer;
+	}
+
+	.agrupamento1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#agrupamento2{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.fotos img {
+		min-width: 300px;
 	}
 }
 
@@ -216,40 +232,55 @@ nav {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgb(255, 255, 255);
 }
 
 .titulo-sobre-nos{
 	font-size: max(30px, 5vw);
 	font-weight: 400;
-	color: #1d1e22;
+	color: #becc00;
 	padding-top: 40px;
 	text-align: center;
 }
 
-.sobre-nos h2, p, h3 {
+.sobre-nos h2, h3 {
 	padding: 40px;
 	text-align: center;
-	color: #1d1e22;
+	color: #becc00;
+	font-size: max(15px, 2vw);
 }
 
 .sobre-nos p {
-	font-size: 20px;
+	padding: 40px;
+	color: #becc00;
+	font-size: max(15px, 1.5vw);
+}
+
+.agrupamento1 {
+	display: flex;
 }
 
 .fotos {
-	display: flex;
-	justify-content: center;
+	padding: 10px;
+}
+
+.fotos img {
+	border-radius: 0px 40px 0px 40px;
+	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.384);
+	border: 4px solid #fbff00a8;
+	width: 40vw;
+	max-width: 440px;
+}
+
+@media (max-width: 767px) {
+	.sobre-nos p {
+		padding: 20px;
+		text-align: center;
+	}
 }
 
 #rodape {
 	padding: 32px;
-	background-color: #131416;
+	background-color: #090a0a;
 	color: white;
-}
-
-#rodape-imagem {
-	height: 48px;
-	display: block;
-	margin: 0 auto;
+	border-top: 1px solid #becc00;
 }
