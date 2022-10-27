@@ -28,7 +28,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	width: 90%;
-	max-width: 1210px;
+	max-width: 1440px;
 	background-color: #1d010d;
 	margin: auto;
 }
@@ -147,7 +147,7 @@ nav {
 	justify-content: space-around;
 	height: 100vh;
 	width: 90%;
-	max-width: 1210px;
+	max-width: 1440px;
 	margin: auto;
 }
 
@@ -229,6 +229,7 @@ nav {
 
 .sobre-nos{
 	width: 90%;
+	max-width: 1440px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -259,6 +260,13 @@ nav {
 	display: flex;
 }
 
+#agrupamento-final {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
 .fotos {
 	padding: 10px;
 }
@@ -276,6 +284,33 @@ nav {
 		padding: 20px;
 		text-align: center;
 	}
+}
+
+.depoimentos {
+	width: 90%;
+	margin: auto;
+	height: 100vh;
+	color: #090a0a;
+	box-shadow: ;
+}
+
+.titulo-cards {
+	height: 20vh;
+	text-align: center;
+	padding-top: 50px;
+	background-color: yellow;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	height: 80vh;
+}
+
+.img-card {
+	background-color: white;
+	margin: 5px;
 }
 
 #rodape {
