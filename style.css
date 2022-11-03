@@ -11,7 +11,7 @@
 body {
 	font-family: 'Arial', sans-serif;
 	font-size: 100%;
-	background-color: rgb(5, 15, 29);
+	background-color: rgb(2, 5, 10);
 }
 
 #cabecalho {
@@ -287,35 +287,36 @@ nav {
 }
 
 .section-depoimentos {
-	background-color: rgb(238, 238, 238);
+	background-color: #efefef;
 }
 
 .depoimentos {
 	width: 90%;
 	max-width: 1440px;
 	margin: auto;
-	height: 100vh;
 	color: #090a0a;
 }
 
 .titulo-cards {
-
 	text-align: center;
 	padding: 5%;
 }
 
 .cards {
 	display: flex;
-	align-items: center;
-	height: 80vh;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
 }
 
 .card {
-	margin: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 30px;
 	border-radius: 10px 10px 0px 0px;
-	box-shadow: 4px 5px 4px #1d1e2260;
-	width: 35vw;
-	background-color: white;
+	box-shadow: 4px 4px 6px #b3b3b360;
+	width: 250px;
+	background-color: rgb(255, 255, 255);
 }
 
 .card h3 {
@@ -327,11 +328,22 @@ nav {
 .card p {
 	color: #3b3b3b;
 	padding: 10px;
+	height: 146px;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #02d9ff;
 }
 
 .img-card {
-	background-color: rgb(209, 209, 209);
-	height: 25vh;
+	display: flex;
+	justify-content: center;
+	height: 160px;
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
