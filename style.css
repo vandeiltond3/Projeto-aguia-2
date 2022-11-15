@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
 * {
 	margin: 0;
@@ -237,7 +238,7 @@ nav {
 
 .titulo-sobre-nos{
 	font-size: max(30px, 5vw);
-	font-weight: 400;
+	font-family: 'Ubuntu Condensed', sans-serif;
 	color: #becc00;
 	padding-top: 40px;
 	text-align: center;
@@ -246,14 +247,17 @@ nav {
 .sobre-nos h2, h3 {
 	padding: 40px;
 	text-align: center;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-weight: 300;
 	color: #becc00;
-	font-size: max(15px, 2vw);
+	font-size: max(17px, 2.3vw);
 }
 
 .sobre-nos p {
 	padding: 40px;
+	font-family: 'Ubuntu Condensed', sans-serif;
 	color: #becc00;
-	font-size: max(15px, 1.5vw);
+	font-size: max(15px, 1.8vw);
 }
 
 .agrupamento1 {
@@ -272,17 +276,18 @@ nav {
 }
 
 .fotos img {
-	border-radius: 0px 40px 0px 40px;
-	box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.384);
-	border: 4px solid #fbff00a8;
 	width: 40vw;
 	max-width: 440px;
 }
 
 @media (max-width: 767px) {
 	.sobre-nos p {
-		padding: 20px;
+		padding: 10px 0px;
 		text-align: center;
+	}
+
+	.sobre-nos h2, h3 {
+		padding: 10px 0px;
 	}
 }
 
@@ -294,12 +299,14 @@ nav {
 	width: 90%;
 	max-width: 1440px;
 	margin: auto;
-	color: #090a0a;
+	color: #1b1b1b;
 }
 
 .titulo-cards {
 	text-align: center;
 	padding: 5%;
+	font-size: max(15px, 2.5vw);
+	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .cards {
@@ -320,6 +327,7 @@ nav {
 }
 
 .card h3 {
+	font-size: max(23px, 2vw);
 	color: #3b3b3b;
 	text-align: left;
 	padding: 10px;
